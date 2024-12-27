@@ -1,0 +1,16 @@
+.aider*
+.env
+.vscode/
+
+# Virtual Environment
+venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db 
