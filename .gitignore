@@ -13,4 +13,8 @@ env/
 
 # OS
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Backup files
+contacts_backup.txt
+contacts_backup.csv
