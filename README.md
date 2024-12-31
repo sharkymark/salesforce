@@ -10,6 +10,9 @@ A Python command-line interface for interacting with Salesforce.com
   - Multiline Description input using Ctrl+D
   - Preserve original values for unchanged fields
 - Verify updates after saving changes
+- Backup all contacts to files (sorted by Account and LastName)
+  - contacts_backup.txt: Human-readable format
+  - contacts_backup.csv: Machine-readable format with column headers
 
 ## Setup
 
@@ -42,7 +45,12 @@ python salesforce.py
    - Enter search criteria
    - View matching contacts
    - Option to edit a contact
-2. Exit
+2. Backup Contacts
+   - Export all contacts to both contacts_backup.txt and contacts_backup.csv (overwrites existing files)
+   - Includes: FirstName, LastName, Account.Name, Email, Title, Phone, Description
+   - CSV format includes column headers for easy import
+   - Sorted by Account.Name then LastName
+3. Exit
 
 ### Editing Contacts
 - After querying, select a contact to edit
